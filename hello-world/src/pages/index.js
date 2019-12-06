@@ -1,9 +1,13 @@
 import React from "react"
+import { Link } from 'gatsby'
+import Layout from '../components/layout'
 
 export default () => {
-    return <div>
+    return <Layout>
         <h1>This is a Demo Page</h1>
-        <div> <a href="/">Home</a> | <a href="/about">About</a> </div>
+        <div> 
+            <Link to="/">Home</Link> | <Link to="/about">About</Link> 
+        </div>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry standard dummy text ever since the 1500s, 
             when an unknown printer took a galley of type and scrambled it to make a type 
@@ -12,5 +16,5 @@ export default () => {
             popularised in the 1960s with the release of Letraset sheets containing 
             Lorem Ipsum passages, and more recently with desktop publishing software like 
             Aldus PageMaker including versions of Lorem Ipsum.</p>
-    </div>
+    </Layout>
 }
